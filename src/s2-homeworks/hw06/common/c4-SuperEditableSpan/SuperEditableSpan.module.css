@@ -1,11 +1,19 @@
 .spanBlock {
+    display: block;
+    color: blue;
 }
 
 .span {
+    font-weight: bold;
 }
 
 .input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 5px;
 }
 
 .pen {
+    color: red;
 }

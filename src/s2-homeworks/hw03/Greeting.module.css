@@ -1,35 +1,77 @@
 .greetingForm {
+    /* Стили для формы */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .inputAndButtonContainer {
+    /* Обертка для input и кнопки */
+    display: flex;
+    margin-bottom: 15px;
 }
 
 .error {
+    /* Стили для отображения ошибки */
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
 }
 
 .input {
+    /* Базовые стили для input */
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
 }
 
 .input:focus {
+    /* Стили для фокуса на input */
+    border-color: blue;
+    outline: none;
 }
 
 .errorInput {
+    /* Дополнительные стили для input с ошибкой */
+    border-color: red;
 }
 
 .button {
+    /* Базовые стили для кнопки */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .button:focus {
+    /* Стили для фокуса на кнопке */
+    outline: none;
 }
 
 .button:active {
+    /* Стили для активной кнопки */
+    background-color: #0056b3;
 }
 
 .button:disabled {
+    /* Стили для отключенной кнопки */
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
 .text {
+    /* Стили для текста */
+    margin-bottom: 15px;
 }
 
 .greeting {
+    /* Стили для приветствия */
+    color: green;
 }

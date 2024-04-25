@@ -1,27 +1,24 @@
-import React, { useState } from 'react'
-import SuperSelect from './common/c5-SuperSelect/SuperSelect'
-import SuperRadio from './common/c6-SuperRadio/SuperRadio'
-import s2 from '../../s1-main/App.module.css'
-import s from './HW7.module.css'
-
-/*
-* 1 - в файле SuperSelect.tsx дописать логику функции onChangeCallback
-* 2 - в файле SuperRadio.tsx дописать логику функции onChangeCallback
-* 3 - в файле SuperRadio.tsx дописать name, checked, value (узнать для чего в радио name)
-* 4 - сделать стили в соответствии с дизайном
-* */
+import React, { useState } from 'react';
+import SuperSelect from './common/c5-SuperSelect/SuperSelect';
+import SuperRadio from './common/c6-SuperRadio/SuperRadio';
+import s2 from '../../s1-main/App.module.css';
+import s from './HW7.module.css';
 
 const arr = [
     { id: 1, value: 'x' },
     { id: 2, value: 'y' },
     { id: 3, value: 'z' },
-] // value может быть изменено
+]; // value может быть изменено
 
 const HW7 = () => {
-    const [value, onChangeOption] = useState(1) // селект и радио должны работать синхронно
+    const [value, setValue] = useState(1); // селект и радио должны работать синхронно
+
+    const handleChangeOption = (option: any) => {
+        setValue(option.id);
+    };
 
     return (
-        <div id={'hw7'}>
+        <div id="hw7">
             <div className={s2.hwTitle}>Homework #7</div>
 
             {/*демонстрация возможностей компонент:*/}
@@ -29,25 +26,25 @@ const HW7 = () => {
                 <div className={s.container}>
                     <div>
                         <SuperSelect
-                            id={'hw7-super-select'}
+                            id="hw7-super-select"
                             options={arr}
                             value={value}
-                            onChangeOption={onChangeOption}
+                            onChangeOption={handleChangeOption}
                         />
                     </div>
                     <div>
                         <SuperRadio
-                            id={'hw7-super-radio'}
-                            name={'hw7-radio'}
+                            id="hw7-super-radio"
+                            name="hw7-radio"
                             options={arr}
                             value={value}
-                            onChangeOption={onChangeOption}
+                            onChangeOption={handleChangeOption}
                         />
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default HW7
+export default HW7;

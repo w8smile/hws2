@@ -1,9 +1,18 @@
 .select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .select:focus {
+    outline: none;
+    border-color: blue;
 }
 
-
 .option:hover {
+    background-color: lightgray;
 }

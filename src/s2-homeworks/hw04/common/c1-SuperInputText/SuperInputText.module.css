@@ -1,20 +1,37 @@
 .input:focus {
+    /* Стили для фокуса на input */
+    border-color: blue;
 }
 
 .input {
+    /* Базовые стили для input */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .inputWrapper {
+    /* Обертка для input */
+    margin-bottom: 15px;
 }
 
 .superInput {
+    /* Дополнительные стили для обычного input */
+    background-color: #f9f9f9;
 }
 
 .errorInput {
+    /* Дополнительные стили для input с ошибкой */
+    border-color: red;
 }
 
 .errorInput:focus {
+    /* Стили для фокуса на input с ошибкой */
+    border-color: darkred;
 }
 
 .error {
+    /* Стили для отображения ошибки */
+    color: red;
+    font-size: 0.8em;
 }

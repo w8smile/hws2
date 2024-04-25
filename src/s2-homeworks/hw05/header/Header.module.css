@@ -1,8 +1,22 @@
-.burgerMenuIcon {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.burgerMenuIcon {
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .header h1 {
+    margin: 0;
 }
