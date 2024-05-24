@@ -16,10 +16,12 @@ const HW7 = () => {
     const handleChangeOption = (option: any) => {
         setValue(option.id);
     };
+    console.log(value)
 
     return (
         <div id="hw7">
             <div className={s2.hwTitle}>Homework #7</div>
+
 
             {/*демонстрация возможностей компонент:*/}
             <div className={s2.hw}>
